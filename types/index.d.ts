@@ -1,14 +1,14 @@
-/// <reference types="node" />
 // TypeScript Version: 3.6
 
-import * as http from 'http';
-import * as https from 'https';
-import * as http2 from 'http2';
+import * as http from 'node:http';
+import * as https from 'node:https';
+import * as http2 from 'node:http2';
 
-import { URL } from 'url';
+import { URL } from 'node:url';
 import * as jose from 'jose';
-import * as crypto from 'crypto';
-import { format } from 'util';
+import * as crypto from 'node:crypto';
+import { format } from 'node:util';
+import type {Buffer} from 'node:buffer';
 
 export type HttpOptions = Partial<
   Pick<

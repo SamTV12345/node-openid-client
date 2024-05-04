@@ -1,5 +1,5 @@
 const querystring = require('querystring');
-const { isNumber, isUndefined } = require('util');
+const { isNumber, isUndefined } = require('node:util');
 
 const { expect } = require('chai');
 const nock = require('nock');
